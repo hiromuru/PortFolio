@@ -1,0 +1,14 @@
+= form_for @sculpture do |f|
+  = f.text_field :title
+  = f.fields_for :images do |image_form|
+    = image_form.file_field :image 
+
+  - if @sculpture.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@sculpture.errors.count, "error")} prohibited this sculpture from being saved:"
+      %ul
+        - @sculpture.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'

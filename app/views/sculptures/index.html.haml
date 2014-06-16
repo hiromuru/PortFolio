@@ -1,0 +1,17 @@
+%h1 Listing sculptures
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @sculptures.each do |sculpture|
+    %tr
+      %td= link_to 'Show', sculpture
+      %td= link_to 'Edit', edit_sculpture_path(sculpture)
+      %td= link_to 'Destroy', sculpture, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Sculpture', new_sculpture_path

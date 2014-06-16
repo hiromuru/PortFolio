@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  wide: 1
+  dipth: 1
+  high: 1
+  madedate: 2014-06-02
+  categoryno: 1
+
+two:
+  title: MyString
+  wide: 1
+  dipth: 1
+  high: 1
+  madedate: 2014-06-02
+  categoryno: 1
